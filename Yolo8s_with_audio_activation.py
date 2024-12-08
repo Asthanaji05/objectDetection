@@ -57,6 +57,8 @@ def object_detection():
     while True:
         success, img = cap.read()
         results = model(img, stream=True)
+        detected_objects = []
+
         for r in results:
             boxes = r.boxes
             for box in boxes:
@@ -70,14 +72,24 @@ def object_detection():
                 cls = int(box.cls[0])
                 currentClass = classNames[cls]
 
-                # Speak detected object
-                text_to_audio(f"{currentClass} detected")
+                # Closeness estimation based on confidence threshold and bounding box size
+                if conf > 0.5:
+                    closeness = "closer" if w * h > 50000 else "farther"
+                    detected_objects.append(f"{currentClass} is {closeness}")
+
+                # Annotate the frame
                 cvzone.putTextRect(img, f'{currentClass} {conf}', (max(0, x1), max(35, y1)))
 
+        # Construct scene description
+        if detected_objects:
+            scene_description = " and ".join(detected_objects)
+            text_to_audio(f"The scene contains: {scene_description}")
+
         cv2.imshow("Image", img)
+
+        # Stop on 'q' key press or 'stop' voice command
         if cv2.waitKey(1) == ord('q'):
             break
-        # Check for "Stop" command
         command = listen_for_command()
         if command and "stop" in command:
             text_to_audio("Stopping object detection")
