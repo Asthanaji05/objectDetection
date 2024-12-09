@@ -5,7 +5,7 @@
 - LiveRCNN: Shreya Asthana's Model
 - Yolov4 : Shreya Tripathi's Model
 ## Streamlit Contributors:
--
+- [Tarandeep Singh Juneja](https://github.com/tsj2003)
 - 
 ## Helping Code 
 - text_to_audio (for output)
