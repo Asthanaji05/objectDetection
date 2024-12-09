@@ -1,5 +1,18 @@
 # Object Detection
-## **textual representation** of the system architecture workflow:
+## Models:
+- Yolo8n : Shashank Asthana's Model
+- Yolo5_8 : Dev Bansal's Model
+- LiveRCNN: Shreya Asthana's Model
+- Yolov4 : Shreya Tripathi's Model
+
+## Helping Code 
+- text_to_audio (for output)
+- activate (input) 
+
+## My Model : Yolo8s_with_audio_activation
+Integrated Yolov8 , NLP, Voice Commands 
+
+## System Architecture:
 
 ---
 
