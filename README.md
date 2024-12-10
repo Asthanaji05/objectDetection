@@ -6,7 +6,7 @@
 - Yolov4 : Shreya Tripathi's Model
 ## Streamlit Contributors:
 - [Tarandeep Singh Juneja](https://github.com/tsj2003)
-- 
+- [Paarth Anand Tiwari](https://github.com/paarth-T)
 ## Helping Code 
 - text_to_audio (for output)
 - activate (input) 
