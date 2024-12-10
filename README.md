@@ -1,6 +1,6 @@
 # Object Detection
 ## Models:
-- Yolo8n : Shashank Asthana's Model
+- Yolo8n : [Shashank Asthana](https://github.com/Asthanaji05)'s Model
 - Yolo5_8 : Dev Bansal's Model
 - LiveRCNN: Shreya Asthana's Model
 - Yolov4 : Shreya Tripathi's Model
