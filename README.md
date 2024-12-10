@@ -1,9 +1,9 @@
 # Object Detection
 ## Models:
 - Yolo8n : [Shashank Asthana](https://github.com/Asthanaji05)'s Model
-- Yolo5_8 : Dev Bansal's Model
-- LiveRCNN: Shreya Asthana's Model
-- Yolov4 : Shreya Tripathi's Model
+- Yolo5_8 : [Dev Bansal](https://github.com/David-07Guru)'s Model
+- LiveRCNN: [Shreya Asthana](https://github.com/Shreya-Asthana)'s Model
+- Yolov4 : [Shreya Tripathi](https://github.com/ShreyaTripathi1)'s Model
 ## Streamlit Contributors:
 - [Tarandeep Singh Juneja](https://github.com/tsj2003)
 - [Paarth Anand Tiwari](https://github.com/paarth-T)
